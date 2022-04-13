@@ -114,4 +114,133 @@
 }
 .about-right-col{
     flex-basis: 50%;
+    text-align: right;
+}
+.about-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+.about-text h2{
+    margin: 50px 0 10px;
+    font-size: 26px;
+    font-style: italic;
+}
+.about-text h3{
+    margin: 50px 0 10px;
+    font-size: 19px;
+    font-style: italic;
+    color: #777;
+}
+/*Features*/
+#features{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.feature-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature-col{
+    flex-basis: 25%;
+    text-align: center;
+}
+.feature-col img{
+    width: 100px;
+}
+.feature-col h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.feature-btn{
+    margin: 70px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.feature-btn .line{
+    text-align: right;
+    display: inline-block;
+    margin-right: 25px;
+}
+/*small screen*/
+@media only screen and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        margin-top: 10px;
+    }
+    .header-text{
+        font-size: 25px;
+        max-width: 250px;
+        margin-left:-50px;
+        margin-top: 30px;
+    }
+    .header-text p{
+        font-size: 20px;
+        margin-top: 10px;
+        max-width: 180px;
+        margin-left: -20px;
+    }
+    /*about*/
+    #about{
+        display: flex;
+        column-count: 2;
+    }
+    .about-left-col{
+        width: 50%;
+        margin-top: -500px;
+    }
+    .about-right-col{
+        width: 50%;
+        text-align: right;
+    }
+    .about-text{
+        max-width: 500px;
+        margin-right: 100px;
+        display: inline-block;
+    }
+    .about-text h1{
+        margin-top: 100px;
+    }
+    .about-text h2{
+        margin: 50px 0 10px;
+        font-size: 15px;
+        font-style: italic;
+    }
+    .about-text h3{
+        margin: 50px 0 10px;
+        font-size: 12px;
+        font-style: italic;
+        color: #777;
+    }
+    .about-text p{
+        font-size: 16px;
+    }
+    /*feature*/
+    .feature-row{
+        width: 100%;
+    }
+    .feature-col{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .feature-col div{
+        flex-basis: 30%;
+    }
+    .feature-col img{
+        width: 100px;  
+    }
+    .feature-col h4{
+        margin-top: 10px;
+        font-size: 15px;
+    }
 }
